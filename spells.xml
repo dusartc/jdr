@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>spells</name>
+		<update version="0.22.08.19">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Eruption esoterique" type="Spell" source="MCU" id="ID_MCU_SPELL_ERUPTION_ESOTERIQUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Une éclatante explosion lumineuse est émise toute autour de vous, chaque cible à votre corps à corps subissent 1D8 de dègâts de foudre ou la moitié sur un jet de sauvegarde de Sagesse réussi</p>
+			<p class="indent">Les dégâts augmentent de 1d8 au niveau 6, 11 et 16 de lanceur de sort</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> +1d8 degats</p>
+		</description>
+		<setters>
+			<set name="keywords">eruption</set>
+			<set name="level">0</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">cac</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Canon esoterique" type="Spell" source="MCU" id="ID_MCU_SPELL_CANON_ESOTERIQUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Un rayon coloré transperce tout sur son passage, la première cible va subir 1d8 d'un élement au hasard entre feu, froid et foudre, la 2ème 1d6 et la 3ème 1d4.</p>
+			<p>Un mur en bois compte pour 1 personne</p>
+			<p class="indent">Les dégâts augmentent de 1 dé au niveau 6, 11 et 16 de lanceur de sort</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> la 2ème cible va subir un d8, 3éme 1d6 4ème 1d4</p>
+		</description>
+		<setters>
+			<set name="keywords">canon</set>
+			<set name="level">0</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30m</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Petit coup d'eau" type="Spell" source="MCU" id="ID_MCU_SPELL_PETIT_COUP_DEAU">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Un fin filament d'eau vous protège, vous obtenez 1d6 PVs temporaires.</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> 1d8 PVs</p>
+		</description>
+		<setters>
+			<set name="keywords">coup</set>
+			<set name="level">0</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">10min</set>
+			<set name="range">personnel</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Soin esoterique" type="Spell" source="MCU" id="ID_MCU_SPELL_SOIN_ESOTERIQUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Vous vous soignez: 1 point ésotèrique donne 2 PV jusqu'a 10, puis 1=1.</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> 1=2 jusqu'a 15</p>
+			<p class="indent"> maximum vos pvs max par repos long </p>
+		</description>
+		<setters>
+			<set name="keywords">soin</set>
+			<set name="level">0</set>
+			<set name="school">esoterique</set>
+			<set name="time">action bonus</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">personnel</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Oeil du Gwakologue" type="Spell" source="MCU" id="ID_MCU_SPELL_OEIL_DU_GWAKOLOGUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Vos yeux émettent une lumière vive jusqu'a 9 mètres et une lumière faible sur 9 mètres supplémentaires. La lumière est de la couleur que vous voulez. Seul vous pouvez en profiter mais les autres peuvent voir vos yeux lumineux.</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> indétectable par les autres</p>
+		</description>
+		<setters>
+			<set name="keywords">oeil</set>
+			<set name="level">0</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">personnel</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Huile du Gwakologue" type="Spell" source="MCU" id="ID_MCU_SPELL_HUILE_DU_GWAKOLOGUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Vous améliorez les degats de votre arme, les 10 prochaines attaques infligent 1 degats nécrotique ou radiant en plus.</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> les 12 prochaines mais les 2 premiers 2 degats en plus</p>
+		</description>
+		<setters>
+			<set name="keywords">huile</set>
+			<set name="level">0</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">personnel</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Necrotance" type="Spell" source="MCU" id="ID_MCU_SPELL_NECROTANCE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Un rayon nécrotique affecte les cible et perdent 1d6+(votre sagesse minimum 1) PVs.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> +1d6 par niveau.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique doubler la portée ou ajouter 2.5 degats par dés</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> d8</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotance</set>
+			<set name="level">1</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">{{intelligence}}*2</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Cercle implosif" type="Spell" source="MCU" id="ID_MCU_SPELL_CERCLE_IMPLOSIF">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Un cercle de 2m de rayon dont la limite est a vos pieds devient lumineus dans un premier temps.</p>
+			<p>A votre prochain tour les personnes dans ce cercle subissent 1d8+(votre sagesse minimum 1) dègâts psychique et ont un désavantage les (votre int/2 minimum 1) prochain tour</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> +1d8 par niveau.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique doubler la durée ou ajouter 3 degats par dés</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 4-LvlSort points ésotèrique l'explosion est direct</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> d10</p>
+		</description>
+		<setters>
+			<set name="keywords">cercle, implosif</set>
+			<set name="level">1</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">2 tours</set>
+			<set name="range">{{intelligence}}*2</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Aide entropique" type="Spell" source="MCU" id="ID_MCU_SPELL_AIDE_ENTROPIQUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Lors de votre prochaine attaque vous pouvez ajouter votre modificateur de Sagesse ou Intelligence au jet d'attaque et de degats.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> pour chaque niveau cela prend effet à chaque attaque suivante.</p>
+			<p class="indent"><b><i>Surcharge</i></b> 1 point ésotèrique pour ajouter +2/+3 </p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> une attaque supplémentaire au prochain tour mais utilisera l'action bonus aussi</p>
+		</description>
+		<setters>
+			<set name="keywords">aide, entropique</set>
+			<set name="level">1</set>
+			<set name="school">esoterique</set>
+			<set name="time">action bonus (+action bonus)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">personnel</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Rayon d'energie entropique" type="Spell" source="MCU" id="ID_MCU_SPELL_RAYON_ENERGIE_ENTROPIQUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Un rayon du gwak fonce sur la cibe et inflige 2d12+modSAGESSE (min1) dègâts basés sur sa meilleure resistance.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> +1d12 par niveau.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique doubler la portée ou ajouter 2.5 degats par dés</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 2 point ésotèrique les degats augmentent de 1 par dés et sont basés sur la 2ème meilleur resistance</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> Surcharge : pour 3 points ignore la resistance/reduction de dègâts </p>
+		</description>
+		<setters>
+			<set name="keywords">rayon, entropique</set>
+			<set name="level">1</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">{{intelligence}}*5</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Fureur du gwakologue" type="Spell" source="MCU" id="ID_MCU_SPELL_FUREUR_DU_GWAKOLOGUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Votre vitesse augmente de 1.5m, obtenez une réduction de dègâts de 1 et en infligez 1 de plus par dé. Cependant votre CA baisse de 1.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> multiplie les variables par le niveau du sort.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique vous ignorez le malus en CA et obtenez 1d6 pv tempo</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> +1 au JDS </p>
+		</description>
+		<setters>
+			<set name="keywords">fureur</set>
+			<set name="level">1</set>
+			<set name="school">esoterique</set>
+			<set name="time">action bonus</set>
+			<set name="duration">{{intelligence}} heure min 1</set>
+			<set name="range">personel</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Resilience du gwakologue" type="Spell" source="MCU" id="ID_MCU_SPELL_RESILIENCE_DU_GWAKOLOGUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Votre vitesse baisse de 1.5m, faites 1 dègâts de moins par dé mais obtenez une réduction de dègâts de 2 et plus 1 a la CA et JDS.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> multiplie les variables par le niveau du sort.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique vous ignorez le malus en vitesse et dègâts</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> +1 au jet d'attaque </p>
+		</description>
+		<setters>
+			<set name="keywords">resilience</set>
+			<set name="level">1</set>
+			<set name="school">esoterique</set>
+			<set name="time">action bonus</set>
+			<set name="duration">{{intelligence}}*5 tours</set>
+			<set name="range">personel</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Folie" type="Spell" source="MCU" id="ID_MCU_SPELL_FOLIE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Un rayon de touillance frappe la cible, si elle rate un JDS de Charisme elle subira une folie passagère.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique la cible lance le JDS avec désavantage</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b>  DD +1</p>
+		</description>
+		<setters>
+			<set name="keywords">folie</set>
+			<set name="level">1</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">1d10 min</set>
+			<set name="range">9m</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Cyclone entropique" type="Spell" source="MCU" id="ID_MCU_SPELL_CYCLONE_ENTROPIQUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Une violente tempête centrée sur vous empêche les personne proche de se battre convenablement, vous êtes dans l'oeuil du cyclone mais les autres personnes dans le cyclone.</p>
+			<p>subissent 1d8 dmg de force par tour et ont désavantage pour attaquer. Un JDS force divise par 2 les dègâts et empéche le désavantage</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> +1d8.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point vous maintenez le sort 2 tours en plus 1dmg en plus par dé</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> +3 au jet de concentration </p>
+		</description>
+		<setters>
+			<set name="keywords">cyclone</set>
+			<set name="level">2</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">1d{{wisdom:mod}}</set>
+			<set name="range">rayon {{intelligence}} min 1 + 4m</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Projectilitance de Gwakito" type="Spell" source="MCU" id="ID_MCU_SPELL_PROJECTITLITANCE_DE_GWAKITO">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>vous tirez une boule d'un élement au hasard entre acide et poison qui inflige 2d8+modSag minimum 1. Si au moins un jet d'attaque et de 5 ou moins alors tout est echec critque.</p>
+			<p>vous pouvez choisir de lancer autant de projectile que vous le souhaitez mais chaque projectile supplémentaire aura un malus de 3 pour toucher. Tout se fait en même temps.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> +1d.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point le malus entre chaque projectilitance n'est que de 2 et inflige tous 1 dmg en plus</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> d10 </p>
+		</description>
+		<setters>
+			<set name="keywords">projectilitance, gwakito</set>
+			<set name="level">2</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">{{intelligence}} min 1 * 3m</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Engagement de desengagement" type="Spell" source="MCU" id="ID_MCU_SPELL_ENGAGEMENT_DE_DESENGAGEMENT">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Vous et votre groupe n'avez pas besoin de vous désengager ce tour ci et les ennemies ne peuvent faire l'action se désengager ce tour ci.</p>
+			<p class="indent"><b><i>Surcharge</i></b> 1 point ésotèrique pour aller se faire foutre</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> une cible qui a 2 tailles de différences et sujete a opportunité </p>
+		</description>
+		<setters>
+			<set name="keywords">engagement, desengagement</set>
+			<set name="level">2</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 reaction</set>
+			<set name="duration">1 tour</set>
+			<set name="range">Jusqu'a 6 personnes alliés et 6 ennemies</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Soin de groupe esoterique" type="Spell" source="MCU" id="ID_MCU_SPELL_SOIN_DE_GROUPE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Vous soignez vous et vos compagnons de 1D10+modSAG+modINT pv mais subissez 1 point de ésotèrisme.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> +1d10+2.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique vous le lancer en réaction</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b> rayon 9m </p>
+		</description>
+		<setters>
+			<set name="keywords">soin</set>
+			<set name="level">2</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">6m</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Folie superieure" type="Spell" source="MCU" id="ID_MCU_SPELL_FOLIE_SUPERIEUR">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Un rayon de touillance frappe la cible, si elle rate un JDS de Charisme elle subira une folie persistance.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique la cible lance le JDS avec désavantage</p>
+			<p class="indent"><b><i>Secret des soeurs</i></b>  DD +1</p>
+		</description>
+		<setters>
+			<set name="keywords">folie,superieur</set>
+			<set name="level">2</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">1d10 heures</set>
+			<set name="range">9m</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Folie supreme" type="Spell" source="MCU" id="ID_MCU_SPELL_FOLIE_SUPREME">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Un rayon de touillance frappe la cible, si elle rate un JDS de Charisme elle subira une folie illimite.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique la cible lance le JDS avec désavantage</p>
+		</description>
+		<setters>
+			<set name="keywords">folie,supreme</set>
+			<set name="level">3</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 action</set>
+			<set name="duration">illimite</set>
+			<set name="range">9m</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Surface entropique" type="Spell" source="MCU" id="ID_MCU_SPELL_SURFACE_ENTROPIQUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Une surface d'un rayon de 6m devient entropique, une cible qui commence son tour dedans subit 1d12 d'un élement au hasard et 1d12 d'un autre. Si la cible rate son JDS de dex elle.</p>
+			<p>subit 1d12 au hasard le prochain tour et ne peut pas utiliser de mouvement, l'opération continue jusque réussite</p>
+			<p class="indent"><b><i>Surcharge</i></b> 2 points pour désavantage au JDS</p>
+		</description>
+		<setters>
+			<set name="keywords">surface</set>
+			<set name="level">3</set>
+			<set name="school">esoterique</set>
+			<set name="time">1 reaction</set>
+			<set name="duration">1 min</set>
+			<set name="range">36m</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ramounerie entropique" type="Spell" source="MCU" id="ID_MCU_SPELL_RAMOUNERIE_ENTROPIQUE">
+		<supports>Gwakologue</supports>
+		<description>
+			<p>Vous lancez un sort de niveau 2+d4 au hasard sur une cible que vous choisissez mais subissez 1 point de ésotèrisme.</p>
+			<p class="indent"><b><i>Surcharge</i></b> pour 1 point ésotèrique le sort et de niveau 3+d6</p>
+		</description>
+		<setters>
+			<set name="keywords">ramounerie</set>
+			<set name="level">3</set>
+			<set name="school">esoterique</set>
+			<set name="time">variable</set>
+			<set name="duration">variable</set>
+			<set name="range">variable</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

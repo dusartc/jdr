@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>gwakologue</name>
+		<update version="0.22.08.19">
+			<file name="gwakologue.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/gwakologue.xml" />
+		</update>
+	</info>
+
+	<element name="Gwakologue" type="Class" source="MCU" id="ID_MARCO_MCU_CLASS_GWAK">
+		<description>
+			<p>En tant qu'humanoïde, vous savez contrôler le flux ésotérique qui commence à sévir en Falconia. Le gwakologue est une classe qui convient aux combattants qui souhaite tout de même lancer des sortilèges. </p>
+			<p>Il est possible d'utiliser sa Sagesse ou son Intelligence pour lancer les sorts du Gwak mais les effets seront différents en fonction du choix.</p>
+			<p>Un gwakologue ne pourra jamais réduire ou guérir son taux d'ésotérisme, il cherche juste à réduire les inconvénients que va causer l'ésotérisme.</p>
+			<p>Cependant la tentative de contrôler un tel pouvoir mystique impliquera des effets secondaires entropiques !</p>
+			<h4>Adepte des 5 soeurs</h4>
+			<p>Il existe deux types de Gwakologue, le premier étant celui qui est pour la recherche ésotérique que mène [censuré] 3 des soeurs, [censuré] !!!</p>
+			<h4>Chercheur antigwak</h4>
+			<p>Contrairement au premier qui sont axés sur la Sagesse, ce second type de Gwakologue est basé sur l'intelligence et va chercher à supprimer l'ésotérisme</p>
+			<p>Ils sont contre les frères de l'ésotérisme et supposent que les tuer est un premier pas vers la suppression de celle-ci.</p>
+			<h5 class="caption">CREATION RAPIDE</h5>
+			<p>Pour concevoir un gwakologue il vous faut une bonne intelligence/sagesse et une bonne force/dextérité. </p>
+			<h3>CLASS FEATURES</h3>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 par niveau de gwakologue</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + Cons</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + Cons aux niveaux suivants</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, medium armor, shield</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Wisdom, Intelligence</li>
+				<li><strong>Skills:</strong> Choisissez deux compétences parmis Acrobaties, Athlétisme, Dressage, Histoire, Intimidation, Intuition, Perception et Survie</li>
+			</ul>
+			<h5 class="caption">LE GWAKOLOGUE</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Combattant entropique, Controle de l'entropie, Magie ésotérique</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Controle de l'entropie, Gwakologue rapide</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Controle de l'entropie</td><td>4</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Combattant entropique controlé, Controle de l'entropie supérieur</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Controle de l'entropie supérieur, Bénèdiction de la soeur</td><td>4</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+			</table>
+
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_GWAK_SPELLCASTING_GWAK" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_GWAK_COMBATTANTENTROPIQUE" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIE" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_GWAK_GWAKOLOGUERAPIDE" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIESUP" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_GWAK_COMBATTANTENTROPIQUESUP" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_GWAK_BENEDELASOEUR" />
+		</description>
+
+		<sheet display="false">
+			<description>Un magicien qui essaie de controler l'entropie.</description>
+		</sheet>
+		<setters>
+			<set name="short">Un magicien qui essaie de controler l'entropie.</set>
+			<set name="hd">d10</set>
+		</setters>
+
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MARCO_MCU_MULTICLASS_GWAK"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MARCO_MCU_MULTICLASS_GWAK"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" requirements="!ID_MARCO_MCU_MULTICLASS_GWAK"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MARCO_MCU_MULTICLASS_GWAK"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_MARCO_MCU_MULTICLASS_GWAK"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MARCO_MCU_MULTICLASS_GWAK"/>
+			<select type="Proficiency" name="Skill Proficiency (Gwakologue)" supports="Skill,Gwakologue" number="2" requirements="!ID_MARCO_MCU_MULTICLASS_GWAK"/>
+
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_SPELLCASTING_GWAK" level="1" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIE" level="1" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_COMBATTANTENTROPIQUE" level="1" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIE" level="2" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_GWAKOLOGUERAPIDE" level="2" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIE" level="3" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_COMBATTANTENTROPIQUESUP" level="4" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIESUP" level="4" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIESUP" level="5" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_BENEDELASOEUR" level="5" />
+		</rules>
+
+		<multiclass id="ID_MARCO_MCU_MULTICLASS_GWAK">
+			<prerequisite>Wisdom 13 or Intelligence 13</prerequisite>
+			<requirements>([wis:13]||[int:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+			</rules>
+		</multiclass>
+
+	</element>
+
+	<element name="Spellcasting" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_SPELLCASTING_GWAK">
+		<description>
+			<p>Un gwakologue gagne la possibilité de lancer des sorts d'ésotérisme dont le nombre dépend du tableau suivant et se récupère après un repos long.</p>
+			<h5 class="caption">CANTRIPS</h5>
+			<p>At 1st level, you know three cantrips of your choice from the gwak spell list. You learn additional gwak cantrips of your choice at higher levels, as shown in the Cantrips Known column of the gwak table.</p>
+			<h5 class="caption">CASTING SPELLS</h5>
+			<p>The gwak table shows how many spell slots you have to cast your gwak spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">You prepare the list of spells that are available for you to cast, choosing from the gwak spell list. When you do so, choose a number of gwak spells equal to your Wisdom modifier + your gwakologue level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+			<p class="indent">For example, if you are a 3rd-level gwakologue, you have three 1st-level and one 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination.</p>
+			<p class="indent">You can change your list of prepared spells when you finish a long rest.</p>
+			<h5 class="caption">SPELLCASTING ABILITY</h5>
+			<p>Wisdom is your spellcasting ability for your spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+		</description>
+
+		<sheet>
+			<description>You can prepare {{gwakologue:spellcasting:prepare}} spells from the gwakologue spell list.</description>
+		</sheet>
+		<spellcasting name="Gwakologue" ability="Wisdom" prepare="true">
+			<list known="true">Gwakologue</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			
+			<stat name="gwakologue:spellcasting:slots:1" value="2" level="1" />
+			<stat name="gwakologue:spellcasting:slots:1" value="1" level="2" />
+			<stat name="gwakologue:spellcasting:slots:2" value="1" level="3" />
+			<stat name="gwakologue:spellcasting:slots:2" value="1" level="4" />
+			<stat name="gwakologue:spellcasting:slots:3" value="1" level="5" />
+
+			<stat name="gwakologue:spellcasting:prepare" value="wisdom:modifier" />
+			<stat name="gwakologue:spellcasting:prepare" value="level:gwakologue" />
+
+			<select type="Spell" name="Cantrip (gwak)" level="1" number="3" spellcasting="gwakologue" />
+			<select type="Spell" name="Cantrip (gwak)" level="3" number="1" spellcasting="gwakologue" />
+		</rules>
+	</element>
+
+	<element name="Combattant entropique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_COMBATTANTENTROPIQUE">
+		<description>
+			<p>Au niveau 1, toutes les attaques que vous allez effectuer sont accompagnées d'un D100 (le même que celui d'échec entropique).</p>
+			<p>Si vous faites une attaque et obtenez un score sur votre D100 qui se trouve dans votre intervalle entropique alors vous obtenez un effet aléatoire dans le tableau ci-dessous</p>
+			<p>(cependant les effets 21 à 24 demandent la capacité Entropie étendue pour fonctionner). L'intervalle entropique se calcule via la formule suivante:</p>
+			<center>
+				<p>[(borne supérieure de l'intervalle d'échec ésotérique + 1) ; (borne supérieure de l'intervalle d'échec ésotérique + 1) + (score entropique / 10) + (level gwakologue * 2)]</p>
+			</center>
+			<p>Il est à préciser que votre chance d'échec ésotérique correspond à votre score ésotérique / 4. Par exemple, si votre personnage est de niveau 3 en gwakologue et a un score ésotérique de 41 alors il fera un échec ésotérique entre 1 et 10 sur le d100 et fera un effet entropique entre 11 et 21 (41 / 4 + 1 + 40 / 10 + 3 * 2)</p>
+		</description>
+		<sheet>
+			<description>l'intervalle se calcule : [(borne sup de l'intervalle d'échec ésotérique + 1) ; (borne sup de l'intervalle d'échec ésotérique + 1) + (score entropique / 10) + ({{level:gwakologue}} * 2)]</description>
+		</sheet>
+	</element>
+
+	<element name="Gwakologue rapide" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_GWAKOLOGUERAPIDE">
+		<description>
+			<p>Au niveau 2 vous gagnez la possibilité de lancer un sort mineur de gwakologue en action bonus si vous effectuez une attaque avec votre action</p>
+		</description>
+		<sheet>
+			<description>vous avez la possibilité de lancer un sort mineur de gwakologue en action bonus si vous effectuez une attaque avec votre action</description>
+		</sheet>
+	</element>
+
+	<element name="Combattant entropique controle" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_COMBATTANTENTROPIQUESUP">
+		<description>
+			<p>À partir du niveau 4, vous pouvez 3 fois par repos long choisir de relancer un jet de la table entropique</p>
+		</description>
+		<sheet usage="3/Long Rest">
+			<description>Vous pouvez 3 fois par repos long choisir de relancer un jet de la table entropique</description>
+		</sheet>
+	</element>
+
+	<element name="Benediction de la soeur" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_BENEDELASOEUR">
+		<description>
+			<p>Au niveau 5 vous pouvez utiliser l'effet secret des soeurs des sorts de niveau 1 et 2.</p>
+		</description>
+		<sheet>
+			<description>vous pouvez utiliser l'effet secret des soeurs des sorts de niveau 1 et 2</description>
+		</sheet>
+	</element>
+
+	<element name="Controle de l'entropie" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIE">
+		<description>
+			<p>Vous apprenez à contrôler les effets entropiques, vous pouvez choisir l'un des effets suivant au niveau 1, 2 et 3.</p>
+			<h5 class="caption">Dissuasion entropique</h5>
+			<p>Votre joueur est aggro par les ennemis comme s'il avait 2 fois moins d'ésotérisme.</p>
+			<h5 class="caption">Entropie etendue</h5>
+			<p>Utilisez les effets 21 à 24 du tableau entropique.</p>
+			<h5 class="caption">Bouclier entropique</h5>
+			<p>Vous obtenez modificateur de Sagesse + (votre score entropique/15) PV temporaire après un repos court. Cette compétence est utilisable modificateur d'intelligence fois par repos long.</p>
+			<h5 class="caption">Chance entropique</h5>
+			<p>La probabilité d'échec critique entropique et de réussite critique entropique de l'adversaire est divisé par deux.</p>
+			<h5 class="caption">Magicien entropique</h5>
+			<p>Vous pouvez lancer un sort entropique par case sort de plus par jour.</p>
+			<h5 class="caption">Effort entropique</h5>
+			<p>Vous remplacez la condition 'minimum 1' des sorts entropiques par 'minimum 2'.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Controle entropie" supports="Controle entropie" level="1"/>
+			<select type="Class Feature" name="Controle entropie" supports="Controle entropie" level="2"/>
+			<select type="Class Feature" name="Controle entropie" supports="Controle entropie" level="3"/>
+		</rules>
+	</element>
+
+	<element name="Controle de l'entropie superieur" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CONTROLEENTROPIESUP">
+		<description>
+			<p>Vous apprenez à contrôler les effets entropiques supérieurs, vous pouvez choisir l'un des effets suivant au niveau 4 et 5.</p>
+			<h5 class="caption">Absorbeur Entropique</h5>
+			<p>Votre limite max entropique n'est plus que de 160. De plus vous pouvez choisir de réduire de 20 votre score entropique.</p>
+			<h5 class="caption">Grand contrôle entropique</h5>
+			<p>Vous pouvez choisir de relancer les jets de la table entropique 1 fois par repos court en plus des 3 par repos long.</p>
+			<h5 class="caption">Maître en incantation rapide</h5>
+			<p>Vous pouvez lancer des sorts de niveau 1 en action bonus.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Controle entropie sup" supports="Controle entropie sup" level="4"/>
+			<select type="Class Feature" name="Controle entropie sup" supports="Controle entropie sup" level="5"/>
+		</rules>
+	</element>
+
+	
+	<element name="Dissuasion entropique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_DISSUASION_ENTROPIQUE" requirements="!ID_MARCO_MCU_CLASS_FEATURE_GWAK_DISSUASION_ENTROPIQUE">
+		<supports>Controle entropie</supports>
+		<description>
+			<p>Votre joueur est aggro par les ennemis comme s'il avait 2 fois moins d'ésotérisme.</p>
+		</description>
+		<sheet><description>Votre joueur est aggro par les ennemis comme s'il avait 2 fois moins d'ésotérisme</description></sheet>
+	</element>
+	<element name="Entropie etendue" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_ENTROPIE_ETENDUE" requirements="!ID_MARCO_MCU_CLASS_FEATURE_GWAK_ENTROPIE_ETENDUE">
+		<supports>Controle entropie</supports>
+		<description>
+			<p>Utilisez les effets 21 à 24 du tableau entropique.</p>
+		</description>
+		<sheet><description>Utilisez les effets 21 à 24 du tableau entropique</description></sheet>
+	</element>
+	<element name="Bouclier entropique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_BOUCLIER_ENTROPIQUE" requirements="!ID_MARCO_MCU_CLASS_FEATURE_GWAK_BOUCLIER_ENTROPIQUE">
+		<supports>Controle entropie</supports>
+		<description>
+			<p>Vous obtenez modificateur de Sagesse + (votre score entropique/15) PV temporaire après un repos court. Cette compétence est utilisable modificateur d'intelligence fois par repos long.</p>
+		</description>
+		<sheet><description>Vous obtenez {{wisdom:modifier}} + (votre score entropique/15) PV temporaire après un repos court ; {{intelligence:modifier}} par repos long</description></sheet>
+	</element>
+	<element name="Chance entropique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_CHANCE_ENTROPIQUE" requirements="!ID_MARCO_MCU_CLASS_FEATURE_GWAK_CHANCE_ENTROPIQUE">
+		<supports>Controle entropie</supports>
+		<description>
+			<p>La probabilité d'échec critique entropique et de réussite critique entropique de l'adversaire est divisé par deux.</p>
+		</description>
+		<sheet><description>La probabilité d'échec critique entropique et de réussite critique entropique de l'adversaire est divisé par deux</description></sheet>
+	</element>
+	<element name="Magicien entropique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_MAGICIEN_ENTROPIQUE" requirements="!ID_MARCO_MCU_CLASS_FEATURE_GWAK_MAGICIEN_ENTROPIQUE">
+		<supports>Controle entropie</supports>
+		<description>
+			<p>Vous pouvez lancer un sort entropique par case sort de plus par jour.</p>
+		</description>
+		<sheet><description>Vous pouvez lancer un sort entropique par case sort de plus par jour</description></sheet>
+	</element>
+	<element name="Effort entropique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_EFFORT_ENTROPIQUE" requirements="!ID_MARCO_MCU_CLASS_FEATURE_GWAK_EFFORT_ENTROPIQUE">
+		<supports>Controle entropie</supports>
+		<description>
+			<p>Vous remplacez la condition 'minimum 1' des sorts entropiques par 'minimum 2'.</p>
+		</description>
+		<sheet><description>Vous remplacez la condition 'minimum 1' des sorts entropiques par 'minimum 2'</description></sheet>
+	</element>
+
+	<element name="Absorbeur entropique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_ABSORBEUR_ENTROPIQUE">
+		<supports>Controle entropie sup</supports>
+		<description>
+			<p>Vous apprenez à contrôler les effets entropiques supérieurs, vous pouvez choisir l'un des effets suivant au niveau 4 et 5.</p>
+		</description>
+	</element>
+	<element name="Grand controle entropique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_GRAND_CONTROLE_ENTROPIQUE">
+		<supports>Controle entropie sup</supports>
+		<description>
+			<p>Votre limite max entropique n'est plus que de 80. De plus vous pouvez choisir de réduire de 10 votre score entropique.</p>
+		</description>
+	</element>
+	<element name="Maitre en incantation rapide" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_GWAK_MAITRE_INCANTATION_RAPIDE">
+		<supports>Controle entropie sup</supports>
+		<description>
+			<p>Vous pouvez lancer des sorts de niveau 1 en action bonus.</p>
+		</description>
+	</element>
+</elements>

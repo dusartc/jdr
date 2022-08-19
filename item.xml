@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>item</name>
+		<update version="0.22.08.19">
+			<file name="item.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/item.xml" />
+		</update>
+	</info>
+
+	<element name="Pavois" type="Armor" source="MCU" id="ID_MARCO_MCU_GEAR_PAVOIS">
+		<supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description>
+			<p>A pavois is made from wood or metal and is carried in one hand. Wielding a pavois increases your Armor Class by 4 and decrease your hit by 2. You can benefit from only one pavois at a time.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="type">Shield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+4</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="melee:attack" value="-2" />
+			<stat name="ranged:attack" value="-2" />
+			<stat name="ac:shield" value="4" bonus="shield" />
+		</rules>
+	</element>
+
+	<element name="Ceinture de Sagesse" type="Magic Item" source="MCU" id="ID_MARCO_MCU_MAGIC_ITEM_CEINTURE_SAGESSE">
+		<description>
+			<p>Augmente la sagesse du porteur de 2</p>
+		</description>
+		<setters>
+			<set name="keywords">wisdom</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">waist</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="2"/>
+		</rules>
+	</element>
+
+	<element name="entropie85" type="Magic Item" source="MCU" id="ID_MARCO_MCU_MAGIC_ITEM_ENTROPIE85">
+		<description>
+			<p>CA+1, JDS+1, Attaque+1, DD+1</p>
+		</description>
+		<setters>
+			<set name="keywords">entropie</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1"/>
+			<stat name="melee:attack" value="1" />
+			<stat name="ranged:attack" value="1" />
+			<stat name="spellcasting:dc:misc" value="1"/>
+			<stat name="strength:save:misc" value="1"/>
+			<stat name="dexterity:save:misc" value="1"/>
+			<stat name="constitution:save:misc" value="1"/>
+			<stat name="intelligence:save:misc" value="1"/>
+			<stat name="wisdom:save:misc" value="1"/>
+			<stat name="charisma:save:misc" value="1"/>
+		</rules>
+	</element>
+</elements>

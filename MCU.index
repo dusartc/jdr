@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Marco Cinematic Universe</name>
+		<description>Le marco cinematic Universe.</description>
+		<author>Marco</author>
+		<update version="0.22.08.19">
+			<file name="MCU.index" url="https://raw.githubusercontent.com/dusartc/jdr/main/MCU.index" />
+		</update>
+	</info>
+	<files>
+		<file name="gwakologue.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/gwakologue.xml" />
+		<file name="item.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/item.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/spells.xml" />
+	</files>
+</index>

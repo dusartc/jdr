@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>sangAncien</name>
+		<update version="0.22.08.19">
+			<file name="paladin_du_sang.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/paladin_du_sang.xml" />
+		</update>
+	</info>
+
+	<element name="sangAncien" type="Class" source="MCU" id="ID_MARCO_MCU_CLASS_PALADIN_DU_SANG_ANCIEN">
+		<description>
+			<p>Certains Paladin souhaitent parfairent leur capacité de Buff et Debuff. Pour cela, ils n'auront aucun scrupule à utiliser la magie du sang. </p>
+			<p>Bien évidemment en tant que Paladin vous utiliserez toujours le sang de vos ennemis.</p>
+			<p>Restera à définir selon votre alignement et ligne de conduite ce que vous considererez comme ennemi.</p>
+			<h3>Serment du Sang Ancien</h3>
+			<p>Un paladin du sang ancien se doit de respecter les preceptes qui suivent. Quelques soit l'alignement du paladin il ne doit tuer uniquement ses ennemis.</p>
+			<p>S'il doit commettre un meurtre sur un individu qui selon sa ligne de conduite ne mérite pas un tel chatiment alors il se doit de purifier et enterrer le mort.</p>
+			<p>S'il doit commetre un meurtre sur un ennemi alors il doit se dire que sa mort n'est que le commencement de sa punition: son ame sera utilisée par les dieux et son corps (sang) sera utilisé par le heraut (toi)</p>
+			<p>/!\ Vous ne pouvez pas prendre cette classe si vous etes deja un paladin</p>
+			<h3>CLASS FEATURES</h3>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 par niveau de gwakologue</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + Cons</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + Cons aux niveaux suivants</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, medium armor, shield</li>
+				<li><strong>Weapons:</strong> All</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Wisdom</li>
+				<li><strong>Skills:</strong> Choisissez une compétence</li>
+			</ul>
+			<h5 class="caption">LE PALADIN DU SANG ANCIEN</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Imposition des mains, Rituel du Sang</td><td>3</td><td>-</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Style de combat, Serment Sacré, Incatation</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Rituel du Sang Ancien, Santé divine</td><td>4</td><td>2</td><td>-</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">ASI, Contregwakisme</td><td>4</td><td>3</td><td>-</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Maitre du rituel, Secret magique</td><td>4</td><td>3</td><td>1</td><td>-</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+			</table>
+
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_IMPOSITION" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_RITUEL_DU_SANG" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_STYLE" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SERMENT" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SPELLCASTING_PALADIN_DU_SANG_ANCIEN" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_RITUEL_DU_SANG_ANCIEN" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SANTE_DIVINE" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_CONTREGWAK" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_MAITRE_DU_RITUEL" />
+			<div element="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SECRET_MAGIQUE" />
+		</description>
+
+		<sheet display="false">
+			<description>Un paladin du sang ancien.</description>
+		</sheet>
+		<setters>
+			<set name="short">Un paladin du sang ancien.</set>
+			<set name="hd">d10</set>
+		</setters>
+
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MARCO_MCU_MULTICLASS_PALADIN_DU_SANG_ANCIEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MARCO_MCU_MULTICLASS_PALADIN_DU_SANG_ANCIEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" requirements="!ID_MARCO_MCU_MULTICLASS_PALADIN_DU_SANG_ANCIEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MARCO_MCU_MULTICLASS_PALADIN_DU_SANG_ANCIEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MARCO_MCU_MULTICLASS_PALADIN_DU_SANG_ANCIEN"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_MARCO_MCU_MULTICLASS_PALADIN_DU_SANG_ANCIEN"/>
+			<select type="Proficiency" name="Skill Proficiency (Paladin du sang ancien)" supports="Skill,sangAncien" number="1" requirements="!ID_MARCO_MCU_MULTICLASS_PALADIN_DU_SANG_ANCIEN"/>
+
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_IMPOSITION" level="1" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_RITUEL_DU_SANG" level="1" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SERMENT" level="2" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SPELLCASTING_PALADIN_DU_SANG_ANCIEN" level="2" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_RITUEL_DU_SANG_ANCIEN" level="3" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SANTE_DIVINE" level="3" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_CONTREGWAK" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_ASI" level="4" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_MAITRE_DU_RITUEL" level="5" />
+			<grant type="Class Feature" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SECRET_MAGIQUE" level="5" />
+		</rules>
+
+		<multiclass id="ID_MARCO_MCU_MULTICLASS_PALADIN_DU_SANG_ANCIEN">
+			<prerequisite>Charisma 13 and Strength 13</prerequisite>
+			<requirements>([cha:13]||[str:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Spellcasting" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SPELLCASTING_PALADIN_DU_SANG_ANCIEN">
+		<description>
+			<p>By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does. See chapter 10 for the general rules of spellcasting and chapter 11 for the paladin spell list.</p>
+			<h5>PREPARING AND CASTING SPELLS</h5>
+			<p>The Paladin table shows how many spell slots you have to cast your paladin spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+			<p class="indent">For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
+			<p class="indent">You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+			</center>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use a holy symbol (found in chapter 5) as a spellcasting focus for your paladin spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does.</description>
+		</sheet>
+		<spellcasting name="sangAncien" ability="Charisma" prepare="true">
+			<list known="true">Paladin</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="sangAncien:spellcasting:slots:1" value="2" level="2" />
+			<stat name="sangAncien:spellcasting:slots:1" value="1" level="3" />
+			<stat name="sangAncien:spellcasting:slots:1" value="1" level="5" />
+			<stat name="sangAncien:spellcasting:slots:2" value="2" level="5" />
+			<stat name="sangAncien:spellcasting:prepare" value="charisma:modifier" />
+			<stat name="sangAncien:spellcasting:prepare" value="level:sangAncien:half" />
+		</rules>
+	</element>
+
+	<element name="Imposition des mains" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_IMPOSITION">
+		<description>
+			<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 6.</p>
+			<p class="indent">As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p>
+			<p class="indent">This feature has no effect on undead and constructs.</p>
+			<p>De plus si vous soignez une personne de votre alignement (Bon/Neutre/Mauvais) alors la personne soignée gagne 1/3 des soins recu en PVtemp</p>
+			<p>Si c'est un alignement différent il faut cependant utiliser 1 point par niveau de paladin du sang ancien en plus pour soigner la cible</p>
+		</description>
+		<sheet action="Action" usage="{{lay on hands:hp pool}}/Long Rest">
+			<description>You can touch a creature and draw power from the pool to restore a number of hp to that creature, up to the maximum amount remaining in your pool. 
+				You can expend 5 hp from your pool of healing to cure the target of one disease or neutralize one poison affecting it.
+				This feature has no effect on undead and constructs.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="lay on hands:hp pool" value="level:sangAncien" />
+			<stat name="lay on hands:hp pool" value="level:sangAncien" />
+			<stat name="lay on hands:hp pool" value="level:sangAncien" />
+			<stat name="lay on hands:hp pool" value="level:sangAncien" />
+			<stat name="lay on hands:hp pool" value="level:sangAncien" />
+			<stat name="lay on hands:hp pool" value="level:sangAncien" />
+		</rules>
+	</element>
+
+	<element name="Rituel du Sang" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_RITUEL_DU_SANG">
+		<description>
+			<p>Voici une liste de rituel que vous pouvez utiliser au niveau 1, vous pouvez en avoir que 1 maximum a la fois (sauf si marqué 'cumulable')</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-15">Nom</td><td class="left">Description</td><td class="col-15">Quantité</td></tr>
+				</thead>
+				<tr><td> arme de sang</td><td class="left">1min, arme bonus de D4+X dmg necrotique/radiant pour 2+X coup au but, degat supplémentaire = vampirique, X max = level paladin</td><td>2+X</td></tr>
+				<tr><td> armure de sang</td><td class="left">5min, votre CA augmente de 1 et reduction degats de 1, effet pendant 10min</td><td>3</td></tr>
+				<tr><td> bouclie de sang</td><td class="left">2min, votre bouclier flotte autour de vous pendant 1h, votre main est donc libre</td><td>4</td></tr>
+				<tr><td> aura de sang</td><td class="left">action bonus, chaque tour vous et vos alliés récupérez 1pv et vos ennemis perdent 1 pv (X2 au premier et dernier tour), 1min, rayon 6m</td><td>2 ou 4 cumulable</td></tr>
+				<tr><td> flou sanglant</td><td class="left">action bonus, Les sources de degats ont 10% de chance d'être ignoré pendant 10min (cout -1 si rituel 1min)</td><td>3 ou 5 cumulable</td></tr>
+			</table>
+		</description>
+		<sheet>
+			Vous utilisez le sang de vos ennemis pour effectuer un rituel
+		</sheet>
+	</element>
+
+	<element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_STYLE">
+		<description>
+			<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.</p>
+			<h5 class="caption">DEFENSE</h5>
+			<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+			<h5 class="caption">DUELING</h5>
+			<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			<h5 class="caption">PROTECTION</h5>
+			<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style,Paladin,sangAncien" />
+		</rules>
+	</element>
+
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+		<supports>sangAncien</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+		<supports>sangAncien</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+		<supports>sangAncien</supports>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+		<supports>sangAncien</supports>
+	</append>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_ASI">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Paladin 4)" supports="Improvement Option,Paladin,4" level="4" />
+		</rules>
+	</element>
+
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_ASI">
+		<supports>sangAncien</supports>
+	</append>
+
+	<element name="Serment Sacré" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SERMENT">
+		<description>
+			<p>Au niveau 2 vous obtenez des pouvoir du sang ancien. Vous pouvez 2 fois par jour (1 fois en plus par niveau de paladin du sang) utiliser l'un des effets :</p>
+			<p class="indent">explosion de sang maudit : les cibles a 18m de vous doivent faire un JDS de Charisme sous peine de perdre 2 dans une stats de votre choix et subir un D8 (D10 au niveau 4)
+				degats en plus par coup subit à l'arme pendant 1min</p>
+			<p class="indent">explosion de sang béni : les alliés a 18m de vous ont +1 sur les D20 pour les 2 (3 au niveau 4) prochains tours et récupere D10+lvlPaladin (D12+lvlPaladin au niveau 4) Pvtemp</p>
+		</description>
+		<sheet action="Action" usage="{{serment:nb}}/Long Rest">
+			<description>
+				Vous pouvez 2 fois par jour (1 fois en plus par niveau de paladin du sang) utiliser l'un des effets :
+				  explosion de sang maudit : les cibles a 18m de vous doivent faire un JDS de Charisme sous peine de perdre 2 dans une stats de votre choix et subir un D8 (D10 au niveau 4)
+				degats en plus par coup subit à l'arme pendant 1min
+				  explosion de sang béni : les alliés a 18m de vous ont +1 sur les D20 pour les 2 (3 au niveau 4) prochains tours et récupere D10+lvlPaladin (D12+lvlPaladin au niveau 4) Pvtemp
+			</description>
+		</sheet>
+		<rules>
+			<stat name="serment:nb" value="level:sangAncien" />
+			<stat name="serment:nb" value="2" />
+		</rules>
+	</element>
+
+	<element name="Rituel du Sang Ancien" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_RITUEL_DU_SANG_ANCIEN">
+		<description>
+			<p>Voici une liste de rituel supplémentaire que vous pouvez utiliser a partir du niveau 3, vous pouvez en avoir que 1 maximum a la fois (sauf si marqué 'cumulable')</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-15">Nom</td><td class="left">Description</td><td class="col-15">Quantité</td></tr>
+				</thead>
+				<tr><td> arme de sang ancien</td><td class="left">5min, arme bonus de D6+X dmg necrotique/radiant pour 2+2*X coup au but, degat supplémentaire = vampirique, X max = level paladin</td><td>5+X</td></tr>
+				<tr><td> armure de sang ancien</td><td class="left">15min, votre CA augmente de 2 et degats repercutés D4+lvlPaladin</td><td>6</td></tr>
+				<tr><td> bouclie de sang ancien</td><td class="left">10min, votre bouclier flotte autour de vous pendant 8h, votre main est donc libre</td><td>5</td></tr>
+				<tr><td> aura de sang ancien</td><td class="left">10min, Vous et alliés obtenez +2 dans une stat au choix pendant 2h</td><td>5 cumulable</td></tr>
+				<tr><td> cri de sang</td><td class="left">action bonus, votre cri provoque 20% de chance d'echec de sorts aux ennemis pendant 5 tours</td><td>6 cumulable</td></tr>
+			</table>
+		</description>
+		<sheet>
+			Vous utilisez le sang de vos ennemis pour effectuer un rituel du sang ancien
+		</sheet>
+	</element>
+
+	<element name="Santé Divine" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SANTE_DIVINE">
+		<description>
+			Vous êtes immunisé aux maladie et obtenez une reduction de 2 au poison, necrotique et radiant
+		</description>
+		<sheet>
+			Vous êtes immunisé aux maladie et obtenez une reduction de 2 au poison, necrotique et radiant
+		</sheet>
+	</element>
+
+	<element name="Contregwak" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_CONTREGWAK">
+		<description>
+			Au niveau 4 vous ne pouvez plus gagner les 3 points d'esoterisme du debut de sceance
+		</description>
+		<sheet>
+			Au niveau 4 vous ne pouvez plus gagner les 3 points d'esoterisme du debut de sceance
+		</sheet>
+	</element>
+
+	<element name="Maitre du rituel" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_MAITRE_DU_RITUEL">
+		<description>
+			Vous pouvez cumuler 2 rituels en meme temps a partir du niveau 5
+		</description>
+		<sheet>
+			Vous pouvez cumuler 2 rituels en meme temps a partir du niveau 5
+		</sheet>
+	</element>
+
+	<element name="Secret magique" type="Class Feature" source="MCU" id="ID_MARCO_MCU_CLASS_FEATURE_PALADIN_DU_SANG_ANCIEN_SECRET_MAGIQUE">
+		<description>
+			A partir du niveau 5 vous pouvez lancer 1 fois par jour un sort de n'importe quelle classe de niveau 1 (en plus des sorts deja utilisable)
+		</description>
+		<sheet>
+			A partir du niveau 5 vous pouvez lancer 1 fois par jour un sort de n'importe quelle classe de niveau 1 (en plus des sorts deja utilisable)
+		</sheet>
+	</element>
+
+	
+</elements>

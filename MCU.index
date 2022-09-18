@@ -12,5 +12,6 @@
 		<file name="gwakologue.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/gwakologue.xml" />
 		<file name="item.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/item.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/spells.xml" />
+		<file name="paladin_du_sang.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/paladin_du_sang.xml" />
 	</files>
 </index>

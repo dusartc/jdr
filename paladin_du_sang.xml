@@ -130,10 +130,10 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-			<stat name="sangAncien:spellcasting:slots:1" value="2" level="2" />
+			<stat name="sangAncien:spellcasting:slots:1" value="1" level="2" />
 			<stat name="sangAncien:spellcasting:slots:1" value="1" level="3" />
-			<stat name="sangAncien:spellcasting:slots:1" value="1" level="5" />
-			<stat name="sangAncien:spellcasting:slots:2" value="2" level="5" />
+			<stat name="sangAncien:spellcasting:slots:1" value="1" level="4" />
+			<stat name="sangAncien:spellcasting:slots:2" value="1" level="5" />
 			<stat name="sangAncien:spellcasting:prepare" value="charisma:modifier" />
 			<stat name="sangAncien:spellcasting:prepare" value="level:sangAncien:half" />
 		</rules>

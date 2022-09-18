@@ -178,7 +178,9 @@
 			</table>
 		</description>
 		<sheet>
-			Vous utilisez le sang de vos ennemis pour effectuer un rituel
+			<description>
+				Vous utilisez le sang de vos ennemis pour effectuer un rituel
+			</description>
 		</sheet>
 	</element>
 
@@ -263,7 +265,9 @@
 			</table>
 		</description>
 		<sheet>
-			Vous utilisez le sang de vos ennemis pour effectuer un rituel du sang ancien
+			<description>
+				Vous utilisez le sang de vos ennemis pour effectuer un rituel du sang ancien
+			</description>
 		</sheet>
 	</element>
 
@@ -272,7 +276,9 @@
 			Vous êtes immunisé aux maladie et obtenez une reduction de 2 au poison, necrotique et radiant
 		</description>
 		<sheet>
-			Vous êtes immunisé aux maladie et obtenez une reduction de 2 au poison, necrotique et radiant
+			<description>
+				Vous êtes immunisé aux maladie et obtenez une reduction de 2 au poison, necrotique et radiant
+			</description>
 		</sheet>
 	</element>
 
@@ -281,7 +287,9 @@
 			Au niveau 4 vous ne pouvez plus gagner les 3 points d'esoterisme du debut de sceance
 		</description>
 		<sheet>
-			Au niveau 4 vous ne pouvez plus gagner les 3 points d'esoterisme du debut de sceance
+			<description>
+				Au niveau 4 vous ne pouvez plus gagner les 3 points d'esoterisme du debut de sceance
+			</description>
 		</sheet>
 	</element>
 
@@ -290,7 +298,9 @@
 			Vous pouvez cumuler 2 rituels en meme temps a partir du niveau 5
 		</description>
 		<sheet>
-			Vous pouvez cumuler 2 rituels en meme temps a partir du niveau 5
+			<description>
+				Vous pouvez cumuler 2 rituels en meme temps a partir du niveau 5
+			</description>
 		</sheet>
 	</element>
 
@@ -299,7 +309,9 @@
 			A partir du niveau 5 vous pouvez lancer 1 fois par jour un sort de n'importe quelle classe de niveau 1 (en plus des sorts deja utilisable)
 		</description>
 		<sheet>
-			A partir du niveau 5 vous pouvez lancer 1 fois par jour un sort de n'importe quelle classe de niveau 1 (en plus des sorts deja utilisable)
+			<description>
+				A partir du niveau 5 vous pouvez lancer 1 fois par jour un sort de n'importe quelle classe de niveau 1 (en plus des sorts deja utilisable)
+			</description>
 		</sheet>
 	</element>
 

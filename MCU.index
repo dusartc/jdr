@@ -4,7 +4,7 @@
 		<name>Marco Cinematic Universe</name>
 		<description>Le marco cinematic Universe.</description>
 		<author>Marco</author>
-		<update version="0.22.08.19">
+		<update version="0.22.10.21">
 			<file name="MCU.index" url="https://raw.githubusercontent.com/dusartc/jdr/main/MCU.index" />
 		</update>
 	</info>

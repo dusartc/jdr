@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>sangAncien</name>
-		<update version="0.22.08.19">
+		<update version="0.22.10.21">
 			<file name="paladin_du_sang.xml" url="https://raw.githubusercontent.com/dusartc/jdr/main/paladin_du_sang.xml" />
 		</update>
 	</info>
@@ -63,7 +63,7 @@
 		</sheet>
 		<setters>
 			<set name="short">Un paladin du sang ancien.</set>
-			<set name="hd">d10</set>
+			<set name="hd">d12</set>
 		</setters>
 
 		<rules>
